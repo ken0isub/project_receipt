@@ -19,3 +19,4 @@ def model_summary():
         sns.heatmap(df_dummy_g, ax=ax, annot=True, cmap='Reds')
         plt.show()
         plt.close('all')
+        fig.savefig('models/summary/' + str(model_summary[:-4]) + '.png')

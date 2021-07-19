@@ -1,17 +1,17 @@
 import numpy as np
-import scipy.stats
+import os
 import pickle
-from sklearn.linear_model import LogisticRegression
-from sklearn.svm import SVC
-from sklearn.tree import DecisionTreeClassifier
+import scipy.stats
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.model_selection import RandomizedSearchCV, train_test_split
 from sklearn.metrics import f1_score
-import os
+from sklearn.svm import SVC
+from sklearn.tree import DecisionTreeClassifier
 
 
-def ml_data_prep(X, y):
+def prep_ml_data(X, y):
     X_flat = []
     for i in range(X.shape[0]):
         X_flat.append(X[i].flatten())
