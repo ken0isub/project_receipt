@@ -66,4 +66,4 @@ print('validating similarity model..')
 print(validate_similarity(validation_dir))
 print('done\n')
 
-model_summary()
+model_summary('models/summary')
