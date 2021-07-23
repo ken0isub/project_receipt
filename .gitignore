@@ -128,6 +128,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+scan_data/
 training/
 validation/
 scaratch_images/
