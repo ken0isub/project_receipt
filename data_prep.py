@@ -127,12 +127,12 @@ def read_images(augmented_data_path):
 
     X = np.array(X)
     le = LabelEncoder()
-    y_dummy = le.fit_transform(y)
-    y_dummy = np.array(y_dummy)
+    y_num = le.fit_transform(y)
+    y_num = np.array(y_num)
     # np.save('models/X', X)
-    # np.save('models/y_dummy', y_dummy)
+    # np.save('models/y_num', y_num)
 
-    return(X, y_dummy, y)
+    return(X, y_num, y)
 
 
 def prep_cv2(training_dir, cv2_label_dir):
