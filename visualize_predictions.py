@@ -4,9 +4,9 @@ import seaborn as sns
 import os
 
 
-def model_summary():
-    for model_summary in os.listdir('models/summary'):
-        df = pd.read_csv('models/summary/' + model_summary, index_col=0)
+def model_summary(models_summary_path):
+    for model_summary in os.listdir(models_summary_path):
+        df = pd.read_csv(models_summary_path + '/' + model_summary, index_col=0)
         print(df)
 
         df_dummy = pd.get_dummies(df, columns=['2'])
