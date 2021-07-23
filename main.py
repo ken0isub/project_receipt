@@ -26,7 +26,7 @@ print('preparing training files..')
 rename_files(scan_data)
 print('done\n')
 
-print('scratching training images..')
+print('augmentation of training images..')
 run_augmentation(training_dir, augmented_training_dir)
 print('done\n')
 
